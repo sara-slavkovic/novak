@@ -1,0 +1,228 @@
+*{
+margin:0;
+padding:0;
+outline: none;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;
+}
+
+
+html{
+    font-size: 62.5%;
+    background-color: #F2F2F2;
+}
+.body{
+    width: 100%;
+}
+/* .heder{
+    width: 100%;
+    height: 100vh;
+    margin-right: 0;
+    position: relative;
+}
+.imgWrap{
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    overflow: hidden;
+     /* overflow je da se ne bi video skrol kod animacije 
+}
+
+@keyframes uvelicaj {
+    from{transform: scale(1.7)}
+    to{transform: scale(1)}
+}
+
+
+.imgWrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+    animation: uvelicaj 6s;
+   
+}
+
+.sveOsimSlike{
+    visibility: hidden;
+}
+.banner{
+    position: absolute;
+    top:37%;
+    left:50%;
+}
+.teksth1{
+    color:#368ABF;
+    font-family: "Merriweather",serif;
+    width: 67%;
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: 7rem;
+    letter-spacing: .2rem;
+    padding:.5rem;
+   font-weight: 600;
+}
+.manjiTekst{
+    font-family: "Roboto",serif;
+
+    color:#368ABF;
+    width: 66%;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 130;
+    /* letter-spacing: .1rem; */
+    /* line-height:2.8rem ; 
+    
+} */
+
+/* .news{
+    position: absolute;
+    right:1%;
+    bottom: 3%;
+    display: flex;
+    flex-direction: row; 
+}
+.poljeNews{
+    width:32rem;
+    height: 3.5rem;
+    border-color:#368ABF ;
+    border:none;
+}
+.dugmeNews{
+    width:8rem;
+    height: 3.5rem;
+    border:none;
+    font-family: "Roboto",serif;
+    font-weight: 590;
+}
+.dugmeNews:hover{
+   background-color:#368ABF ;
+   border: none;
+}
+::placeholder{
+    color: black;
+    font-family: "Roboto",serif;
+    font-weight: 180;
+   
+} */
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(54, 138, 191,0.4);
+    
+    /* height: 10rem; */
+    /* padding: 0 10%; */   
+} 
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position:fixed; 
+    /* background-color: #F2F2F2;
+    z-index: 100;
+    opacity: 0.95;
+    box-shadow: black;    */
+} 
+/* .navBar ul li{
+    display: inline-block;
+    margin:2rem;
+    font-size: 2rem;
+    font-family: "Merriweather",serif;
+    font-weight: 400;
+    bottom: 0;
+} */
+/* .navBar ul li a{
+    color: #368ABF;
+ }
+.navBar ul li a:hover{
+   color:#9CCED9;
+   border-bottom: 2px solid #9CCED9;
+   
+}
+
+
+
+.imgLogo{
+    width: 10rem;
+    height: 10rem;
+     margin-left: 4.5rem;
+}
+ .drugaStrana{
+    width:  100vw;
+    height: 100vh;
+} 
+
+.proizvod1{
+    text-align: center;
+    padding: 1rem 5rem 1rem 4rem;
+}
+
+.linija{
+    width:18rem;
+    height: 0.3rem;
+    background-color: #368ABF;
+    
+}
+.proizvod1 h2{
+    font-size: 4rem;
+    font-family: "Merriweather",serif;
+    font-weight: 300;
+    font-size: 6rem;
+    color:#368ABF;
+}
+.proizvodContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pro{
+    width: 23%;
+     padding: 1rem 1rem; 
+    border: 0.1rem solid #9CCED9;
+    border-radius: 3.7rem;
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 1rem #368ABF ;
+    margin: 2rem 0;
+    transition: transform 0.3s;
+}
+.pro:hover{
+    transform: scale(1.1);
+}
+.slikaProizvoda{
+    width: 100%;
+    height:80%;
+   border-radius: 3.7rem;
+}
+.opis{
+    text-align: center;
+    padding: 0.7rem 0;
+}
+.opis h5{
+    padding-top: 0.4rem;
+    padding: 0.5rem;
+    color: #368ABF;
+    font-family: "Merriweather",serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.opis h4{
+    padding-top: 0.4rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #9CCED9;
+    font-family: "Roboto",serif;
+
+}
+@media (max-width:840px) {
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+
+    }
+} */

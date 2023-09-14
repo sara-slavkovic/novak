@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,700&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+
+        <link rel="shortcut icon" type="image/x-icon" href="slike/favicon.ico"/>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>Novak Đoković</title>
+    </head>
+    <body>
+        <section class="header">
+            <a href="index.html"><img src="slike/logo.png" alt="logoNovak" class="logoNovak"></a>
+
+            <nav class="meni">
+                
+                <ul class="navBar">
+                    <li> <a href="index.html" class="klasa">Početna</a></li>
+                     <li> <a href="dostignuca.html" target="_blank" class="klasa">Dostignuća</a></li>
+                     <li> <a href="proizvodi.html" target="_blank" class="klasa">Proizvodi</a></li>
+                      <li> <a href="kupi.html" target="_blank" class="klasa" >Kupi</a></li>
+                </ul>
+    
+                <div class="hamburger">
+                    <span class="crtica"></span>
+                    <span class="crtica"></span>
+                    <span class="crtica"></span>
+    
+                </div>
+            </nav>
+        </section>
+        
+        <div id="kupovina">
+
+            <div id="naslov">
+                <center>
+                    <h2 id="kupi-naslov">Kupovina</h2>
+                </center>
+                <center> <div class="linijaKupi"></div></center>
+            </div>
+            <div id="div-forme">
+
+                <div class="col" id="col1">
+                    <h2>Izaberite proizvode:</h2>
+                    <div id="cekirani-proizvod1" class="cekirani-proizvod">
+                        <input type="checkbox" name="" id="proizvod1" value="Majica/zastava">
+                        <span>Majica/zastava</span>
+                    </div>
+                    <div id="cekirani-proizvod2" class="cekirani-proizvod">
+                        <input type="checkbox" name="" id="proizvod2" value="Majica/logo">
+                        <span>Majica/logo</span>
+
+                    </div>
+                    <div id="cekirani-proizvod3" class="cekirani-proizvod">
+                        <input type="checkbox" name="" id="proizvod3" value="Siva majica">
+                        <span>Siva majica</span><br>
+                    </div>
+                    <div id="cekirani-proizvod4" class="cekirani-proizvod">
+                        <input type="checkbox" name="" id="proizvod4" value="Bela majica">
+                        <span>Bela majica</span><br>
+
+                    </div>
+                    <div id="cekirani-proizvod5" class="cekirani-proizvod">
+                        <input type="checkbox" name="" id="proizvod5" value="Ranac">
+                        <span>Ranac</span><br>
+                    </div>
+                    <div id="cekirani-proizvod6" class="cekirani-proizvod">
+                        <input type="checkbox" name="" id="proizvod6" value="Beli kačket">
+                        <span>Beli kačket</span><br>
+                    </div>
+                    <div id="cekirani-proizvod7" class="cekirani-proizvod">
+                        <input type="checkbox" name="" id="proizvod7" value="Crni kačket">
+                        <span>Crni kačket</span><br>
+                    </div>
+                    <div id="cekirani-proizvod8" class="cekirani-proizvod">
+                        <input type="checkbox" name="" id="proizvod8" value="Maska za telefon">
+                        <span>Maska za telefon</span><br>
+                    </div>
+
+                    <div id="pokazateljPr">
+                        <img id="pokazateljPr1" src="slike/majica1.jpg" alt="">
+                        <img id="pokazateljPr2" src="slike/majica2.jpg" alt="">
+                        <img id="pokazateljPr3" src="slike/majica3.jpg" alt="">
+                        <img id="pokazateljPr4" src="slike/majica4.jpg" alt="">
+                        <img id="pokazateljPr5" src="slike/ranac.jpg" alt="">
+                        <img id="pokazateljPr6" src="slike/kacket2.jpg" alt="">
+                        <img id="pokazateljPr7" src="slike/kacket.jpg" alt="">
+                        <img id="pokazateljPr8" src="slike/maska.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <form class="forma" action="">
+                        <h2>Kontakt informacije</h2>
+                        <div class="mejl">
+                            <input class="ulaz" type="email" name="" id="email-id" placeholder="petra@petra.com">
+                            <br>
+                            <input type="checkbox" name="" checked><span>želim da se prijavim na newsletter</span>
+                        </div>
+
+                        <div>
+                            <label for="">Ime</label>
+                            <input id="ime-id" class="ulaz" type="text" placeholder="Petra">
+
+                            <label for="">Prezime</label>
+                            <input id="prezime-id" class="ulaz" type="text" placeholder="Petrović">
+                        </div>
+
+                        <h2>Način plaćanja</h2>
+                        <div>
+                            <div>
+                                <input type="radio" name="dostava" id="radio1" onclick="zatvoriKarticu()" checked><span>Plaćanje pouzećem</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="dostava" id="radio2" onclick="otvoriKarticu()"><span>Plaćanje karticom</span>
+                            </div>
+                        </div>
+
+                        <h2>Adresa isporuke</h2>
+                        <div>
+                            <label for="adresa-id">Ulica</label>
+                            <input class="ulaz" type="text" name="" id="adresa-id" placeholder="Knez Mihailova 1">
+                        </div>
+                        <div>
+                            <label for="stan-id">Stan</label>
+                            <input class="ulaz" type="number" name="" id="stan-id" maxlength="3" placeholder="1">
+                        </div>
+                        <div>
+                            <label for="brtel-id">Broj telefona</label>
+                            <input class="ulaz" type="text" id="brtel-id" placeholder="+381 123 456">
+                        </div>
+                        <div>
+                            <label for="grad-id">Grad</label>
+                            <input class="ulaz" type="text" id="grad-id" placeholder="Beograd">
+                        </div>
+
+                        <label for="">Izaberite državu:</label>
+                        <select class="ulaz" name="" id="">
+                            <option class="drzave" value="Srbija">Srbija</option>
+                            <option class="drzave" value="Bosna i Hercegovina">Bosna i Hercegovina</option>
+                            <option class="drzave" value="Crna Gora">Crna Gora</option>
+                            <option class="drzave" value="Severna Makedonija">Severna Makedonija</option>
+                            <option class="drzave" value="Hrvatska">Hrvatska</option>
+                        </select>
+
+                        <div>
+                            <label>Da li imate neki dodatan komentar ili napomenu?</label>
+                            <textarea class="ulaz" name="" id="komentar"></textarea>
+                        </div>
+
+                        <div>
+                            <input id="uslovi" type="checkbox" name="" checked><span>prihvatam uslove korišćenja</span>
+                        </div>
+
+                        <div>
+                            <button id="dugme-naruči" type="submit">Naruči</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col">
+                    <h2>Plaćanje karticom</h2>
+                    <form id="formaKartica" action="">
+                        <div>
+                            <label for="">Možete koristiti kartice:</label>
+                            <img src="slike/we-accept-credit-cards.jpeg" alt="slika kartica">
+                        </div>
+                        <div>
+                            <label for="">Ime na kartici</label>
+                            <input class="ulaz" type="text" placeholder="petra petrović" name="poljeZaKarticu" id="imekart-id" disabled="disabled">
+                        </div>
+                        <div>
+                            <label for="">Broj platne kartice</label>
+                            <input class="ulaz" type="text" placeholder="1111 2222 3333 4444" name="poljeZaKarticu" id="brkart-id" disabled="disabled">
+                        </div>
+                        <div>
+                            <label for="">Važi do</label>
+                            <input class="ulaz" type="text" placeholder="01/24" name="poljeZaKarticu" id="datum-id" disabled="disabled">
+                        </div>
+                        <div>
+                            <label for="">CVV</label>
+                            <input class="ulaz" type="text" placeholder="123" name="poljeZaKarticu" id="cvv-id" disabled="disaled">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        
+        <footer class="futer">
+            <div class="kontakt">
+                <center>
+                    <h1>Kontakt</h1>
+                </center>
+
+                <div class="ikonice">
+                    <a href="https://twitter.com/DjokerNole" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/djokernole/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/djokovicofficial/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@DjokerNole/videos" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+                <section class="vratiGore">
+                    <i class="fa-solid fa-angles-up"></i>
+                </section>
+
+                <div class="kopirajt">
+                    <p id="copyright-datum"></p>
+                </div>
+
+            </footer>
+            <script src="script.js"></script>
+        </body>
+    </body>
+</html></body></html>
